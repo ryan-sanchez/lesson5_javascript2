@@ -72,10 +72,42 @@ function calculateTax(){
            
           else if(status == 1) {
                 //INSERT YOUR CODE BELOW
-  
-  
-  
-  
+                // Compute tax for married jointly
+               if (income <= 18550){
+                 tax = income * 0.10;
+                 taxRate = 10;
+               }//end of nested if
+               else if (income <= 75300) {
+                 tax = 18550 * 0.10 + (income - 18550) * 0.15;
+                 taxRate = 15;
+               }//end of else if
+               else if (income <= 151900) {
+                 tax = 18550 * 0.10 + (75300 - 18550) * 0.15 + (income - 75300) * 0.25;
+                 taxRate = 25;
+               } //end of else if
+               else if (income <= 231450) {
+                 tax = 18550 * 0.10 + (75300 - 18550) * 0.15 +
+                       (151900 - 75301) * 0.25 + (income - 151900) * 0.28;
+                 taxRate = 28;
+               }//end of else if
+               else if (income <= 413350) {
+                 tax = 18550 * 0.10 + (75300 - 18550) * 0.15 +
+                       (151900 - 75301) * 0.25 + (231450 - 151901) * 0.28 +
+                       (income - 231450) * 0.33;
+                 taxRate = 33;
+               }//end of else if
+               else if (income <= 466950) {
+                  tax = 18550 * 0.10 + (75300 - 18550) * 0.15 +
+                        (151900 - 75300) * 0.25 + (231450 - 151900) * 0.28 +
+                        (413350 - 231451) * 0.33 + (income - 413350) * 0.35;
+                  taxRate = 35;
+               }//end of else if
+               else {
+                  tax = 18550 * 0.10 + (75300 - 18550) * 0.15 +
+                        (151900 - 75300) * 0.25 + (231450 - 151900) * 0.28 +
+                        (413350 - 231451) * 0.33 + (income - 413350) * 0.35 + (income - 466951) * .396;
+                  taxRate = 39.6;
+               }//end of nested if
           }//end of married file jointly calculation
           
           
@@ -93,10 +125,42 @@ function calculateTax(){
                  
           else if(status == 2) {
                 //INSERT YOUR CODE BELOW
-
-             
-             
-             
+                if (income <= 9275){
+                 tax = income * 0.10;
+                 taxRate = 10;
+               }//end of nested if
+               else if (income <= 37650) {
+                 tax = 9275 * 0.10 + (income - 9275) * 0.15;
+                 taxRate = 15;
+               }//end of else if
+               else if (income <= 75950) {
+                 tax = 9275 * 0.10 + (37650 - 9275) * 0.15 + (income - 37650) * 0.25;
+                 taxRate = 25;
+               } //end of else if
+               else if (income <= 115725) {
+                 tax = 9275 * 0.10 + (37650 - 9275) * 0.15 +
+                       (75950 - 37650) * 0.25 + (income - 75950) * 0.28;
+                 taxRate = 28;
+               }//end of else if
+               else if (income <= 206675) {
+                 tax = 9275 * 0.10 + (37650 - 9275) * 0.15 +
+                       (75950 - 37650) * 0.25 + (115725 - 75950) * 0.28 +
+                       (income - 115725) * 0.33;
+                 taxRate = 33;
+               }//end of else if
+               else if (income <= 415050) {
+                  tax = 9275 * 0.10 + (37650 - 9275) * 0.15 +
+                       (75950 - 37650) * 0.25 + (115725 - 75950) * 0.28 +
+                       (income - 115725) * 0.33 + (income - 206676) * 0.35;
+                  taxRate = 35;
+               }//end of else if
+               else {
+                  tax = 9275 * 0.10 + (37650 - 9275) * 0.15 +
+                       (75950 - 37650) * 0.25 + (115725 - 75950) * 0.28 +
+                       (income - 115725) * 0.33 + (income - 206676) * 0.35 + (income - 233475) * .396;
+                  taxRate = 39.6;
+               }
+              
           }//end of married file separately calculation
         
         
@@ -114,10 +178,42 @@ function calculateTax(){
           
           else if(status == 3) {
                 //INSERT YOUR CODE BELOW
- 
- 
-
-             
+                if (income <= 13250){
+                 tax = income * 0.10;
+                 taxRate = 10;
+               }//end of nested if
+               else if (income <= 50400) {
+                 tax = 13250 * 0.10 + (income - 13250) * 0.15;
+                 taxRate = 15;
+               }//end of else if
+               else if (income <= 130150) {
+                 tax = 13250 * 0.10 + (50400 - 13250) * 0.15 + (income - 50400) * 0.25;
+                 taxRate = 25;
+               } //end of else if
+               else if (income <= 210800) {
+                 tax = 13250 * 0.10 + (50400 - 13250) * 0.15 +
+                       (130150 - 50400) * 0.25 + (income - 130150) * 0.28;
+                 taxRate = 28;
+               }//end of else if
+               else if (income <= 413350) {
+                 tax = 13250 * 0.10 + (50400 - 13250) * 0.15 +
+                       (130150 - 50400) * 0.25 + (210800 - 130150) * 0.28 +
+                       (income - 210800) * 0.33;
+                 taxRate = 33;
+               }//end of else if
+               else if (income <= 441000) {
+                  tax = 13250 * 0.10 + (50400 - 13250) * 0.15 +
+                       (130150 - 50400) * 0.25 + (210800 - 130150) * 0.28 +
+                       (income - 210800) * 0.33 + (income - 413351) * 0.35;
+                  taxRate = 35;
+               }//end of else if
+               else {
+                  tax = 13250 * 0.10 + (50400 - 13250) * 0.15 +
+                       (130150 - 50400) * 0.25 + (210800 - 130150) * 0.28 +
+                       (income - 210800) * 0.33 + (income - 413351) * 0.35 + (income - 441000) * .396;
+                  taxRate = 39.6;
+               }
+              
           }//end of head of household calculation
           
           
@@ -174,7 +270,8 @@ function clearButton () {
               document.getElementById("filingStatus").selectedIndex = 0;
               
              //INSERT YOUR CODE BELOW
-
+              document.getElementById("taxEstimate").value = "";
+              document.getElementById("taxBracket").value = "";
 
 
 

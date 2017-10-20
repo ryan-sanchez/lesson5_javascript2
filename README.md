@@ -4,20 +4,20 @@
 Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+October 20, 2017
 
 ### Student Name:  
-(First and Last Name)
+Ryan Sanchez
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+In this assignment, we edited and fixed a tax bracket calculator, which takes the user's income and relationship status and returns their tax information estimates.
 
 ### View Project:
 (Replace this statement with your Github Page URL that was created when you 
  published the project.)
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. How to use the getElementById function to link two files.
+2. How to configure if/else statements with many factors.
+3. How to link methods to buttons on the HTML page.
 
